@@ -11,7 +11,7 @@ const start = async () => {
     const second = await readFile("./content/write_file.txt", "utf8");
     await writeFile(
       "./content/result-mind-grenade.txt",
-      `this is: ${first} and that is ${second}`
+      `this is: ${first} and that is ${second}`,{flag:'a'}
     );
     console.log(first, second);
   } catch (error) {
